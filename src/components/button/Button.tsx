@@ -1,28 +1,20 @@
-import './button.css';
-
-interface ButtonProps {
-  primary?: boolean;
-  label: string;
-  size?: string;
-  onClick?: () => void;
-}
+import {ButtonProps} from './interface.ts';
+import {StyledButton} from './style.ts';
 
 /**
  * Primary UI component for user interaction
  */
 export const Button = ({
-  primary = false,
+  className,
   label,
-  size = 'medium',
   ...props
 }: ButtonProps) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
   return (
-    <button
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
+    <StyledButton
+      className={className}
       {...props}
     >
       {label}
-    </button>
+    </StyledButton>
   );
 };
