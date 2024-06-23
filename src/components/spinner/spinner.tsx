@@ -1,13 +1,13 @@
-import './header.css';
+import {StyledSpinner} from './style.ts';
 
 interface SpinnerProps {
-    color?: 'string';
-    direction?: 'string';
+    color?: string;
+    clockwiseDirection?: boolean;
     size?: number;
 }
 
 export const Spinner = ({color}: SpinnerProps) => (
-    <div>
+    <StyledSpinner>
         {color}
-    </div>
+    </StyledSpinner>
 );

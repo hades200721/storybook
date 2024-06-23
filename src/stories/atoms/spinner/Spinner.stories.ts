@@ -1,8 +1,8 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { Spinner } from '../../../components/spinner';
+import type {Meta, StoryObj} from '@storybook/react';
+import {Spinner} from '../../../components/spinner';
 
 const meta = {
-  title: 'Atoms/Button',
+  title: 'Atoms/Spinner',
   component: Spinner,
   parameters: {
     layout: 'centered',
@@ -15,12 +15,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Regular: Story = {
   args: {
-    size: 20,
-  },
-};
-
-export const Large: Story = {
-  args: {
-    size: 40,
+    color: 'red',
   },
 };
