@@ -36,6 +36,7 @@
     "eslint-plugin-storybook": "^0.8.0",
     "storybook": "^8.1.9",
     "styled-components": "6.1.11",
+    "vite-plugin-svgr": "4.2.0",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
   }
