@@ -23,6 +23,15 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
+export const Bars: Story = {
+  args: {
+    color: '#333',
+    duration: 0.8,
+    size: 30,
+    type: 'bars',
+  },
+};
+
 export const Spinner: Story = {
   args: {
     color: '#333',

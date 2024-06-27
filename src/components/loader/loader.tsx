@@ -4,7 +4,7 @@ import {StyledSpinner} from './style.ts';
 import {DEFAULT_LOADER_PROPS} from './constants.ts';
 import {SpinnerProps} from './interface.ts';
 
-export const Loader = ({...props}: SpinnerProps) => {
+export const Loader = ({...props}) => {
     const componentProps = {
         ...DEFAULT_LOADER_PROPS,
         ...props,
