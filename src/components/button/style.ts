@@ -31,9 +31,9 @@ export const StyledButton = styled.button`
             }
         }
         if (props.primary) {
-            buttonColorsProps = `color: white; background-color: #1ea7fd;`;
+            buttonColorsProps = `color: white; background-color: var(--primary-brand-color);`;
         } else {
-            buttonColorsProps = ` color: #333; background-color: transparent; box-shadow: rgba(0, 0, 0, 0.15) 0 0 0 1px inset;`;
+            buttonColorsProps = ` color: var(--primary-text-color); background-color: transparent; box-shadow: rgba(0, 0, 0, 0.15) 0 0 0 1px inset;`;
         }
         return buttonSizeProps + buttonColorsProps;
     }
