@@ -1,6 +1,6 @@
 import React from 'react';
-import {ButtonProps} from './interface';
-import {StyledButton} from './style';
+import {ButtonProps} from './interface.ts';
+import {StyledButton} from './style.ts';
 
 /**
  * Primary UI component for user interaction
