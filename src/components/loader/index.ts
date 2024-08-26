@@ -1,1 +1,1 @@
-export {Loader} from './loader.tsx';
+export {Loader} from './loader';

@@ -1,20 +1,21 @@
-import {ButtonProps} from './interface.ts';
-import {StyledButton} from './style.ts';
+import React from 'react';
+import {ButtonProps} from './interface';
+import {StyledButton} from './style';
 
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({
-  className,
-  label,
-  ...props
-}: ButtonProps) => {
-  return (
-    <StyledButton
-      className={className}
-      {...props}
-    >
-      {label}
-    </StyledButton>
-  );
+export const Button: React.FC<ButtonProps> = ({
+                                                  className,
+                                                  label,
+                                                  ...props
+                                              }) => {
+    return (
+        <StyledButton
+            className={className}
+            {...props}
+        >
+            {label}
+        </StyledButton>
+    );
 };

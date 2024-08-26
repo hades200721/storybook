@@ -5,7 +5,7 @@ export interface ButtonStyleProps {
     size?: string;
 }
 
-export const StyledButton = styled.button`
+export const StyledButton = styled.button<ButtonStyleProps>`
     font-weight: 700;
     border: 0;
     border-radius: 3em;

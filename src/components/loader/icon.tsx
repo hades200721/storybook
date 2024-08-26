@@ -15,7 +15,7 @@ export const iconRenderer = (props: SpinnerProps) => {
                 {stepsArr.map((step: number) =>
                     <path transform={`translate(${2 + (value * step)})`} d="M0 12 V20 H4 V12z">
                         <animate attributeName="d" values="M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z" dur="1.2s" repeatCount="indefinite"
-                                 begin={0.2* step} keytimes="0;0.2;0.5;1" keySplines="0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8" calcMode="spline"  />
+                                 begin={0.2* step} keyTimes="0;0.2;0.5;1" keySplines="0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8" calcMode="spline"  />
                     </path>)}
             </g>;
         }

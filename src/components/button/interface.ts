@@ -1,5 +1,5 @@
 export interface ButtonProps {
-    className?: any;
+    className?: string;
     primary?: boolean;
     label: string;
     size?: string;

@@ -1,8 +1,8 @@
 import {useCallback} from 'react';
-import {iconRenderer} from './icon.tsx';
-import {StyledSpinner} from './style.ts';
-import {DEFAULT_LOADER_PROPS} from './constants.ts';
-import {SpinnerProps} from './interface.ts';
+import {iconRenderer} from './icon';
+import {StyledSpinner} from './style';
+import {DEFAULT_LOADER_PROPS} from './constants';
+import {SpinnerProps} from './interface';
 
 export const Loader = ({...props}) => {
     const componentProps = {
